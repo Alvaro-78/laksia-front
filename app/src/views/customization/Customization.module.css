@@ -1,0 +1,105 @@
+.background-container {
+	display: flex;
+	background-color: rgb(229, 229, 229);
+	width: 100vw;
+	height: 100vh;
+	font-family: Lexend Deca;
+}
+
+.scroll-container {
+	overflow-y: scroll;
+	width: 100vw;
+}
+
+.main-title {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	padding-left: 4vw;
+}
+
+/* Grid Info Asset */
+
+.grid-container {
+	display: grid;
+	height: 100vh;
+	padding-right: 4vw;
+	grid-template-columns: repeat(4, 25%);
+	grid-template-rows: 10em auto 7vh auto auto;
+    /* Test grid tempate areas */
+    grid-template-areas: 
+    "title title title title"
+    "name name name name" 
+    "button button column2 column2" 
+    "ns ns ns ns"
+    "assets assets assets assets";
+	grid-gap: 1rem;
+}
+
+.grid-container > * {
+	text-align: center;
+}
+
+/* Info Custom */
+
+.title-container-grid {
+    grid-area: title;
+	margin-top: 3rem;
+}
+
+.title {
+	font-weight: bold;
+    text-align: left;
+	padding-top: 4vh;
+    margin-left: 4rem;
+}
+
+/* Name description and Profile (logo + 2 description) */
+
+/* Box global */
+.organizador_logo_descripcion {
+	grid-area: button;
+	display: flex;
+	margin-left: 4rem;
+	margin-top: 2rem;
+}
+
+/* Logo Box */
+.profile_logo {
+	background-color: #FFFFFF;
+	width: 151px;
+	height: 151px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Keep the image wihtout destroy de aspect */
+.keep_img {
+	object-fit: fill;
+	text-align: center;
+}
+
+.main-title-name {
+    grid-area: name;
+}
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-feature-settings: Lexend Deca;
+}
+
+.info-container>.fest-input:last-child {
+	margin-top: 1rem;
+}
+
+.fest-input {
+	text-align: left;
+	font: normal normal bold 28px/35px Lexend Deca;
+	letter-spacing: 0px;
+	color: #000000;
+	opacity: 1;
+	margin-left: 2rem;
+}

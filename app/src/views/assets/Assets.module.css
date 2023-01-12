@@ -1,0 +1,68 @@
+.background-container {
+	display: flex;
+	background-color: rgb(229, 229, 229);
+	width: 100vw;
+	height: 100vh;
+	font-family: Lexend Deca;
+	font-size: 28px;
+}
+
+.grid-container {
+	width: 100%;
+	max-width: 95%;
+	display: grid;
+	justify-items: center;
+	grid-gap: 4rem;
+	margin-left: 2.5vw;
+	grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+	grid-template-rows: repeat(3, 1fr);
+}
+
+.scroll-container {
+	overflow-y: scroll;
+	width: 100vw;
+}
+
+.main-title {
+	margin-top: 3rem;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	padding-left: 4vw;
+}
+
+.bold-title {
+	font-weight: bold;
+}
+
+.create-asset-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+
+.asset-logo {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50px;
+	background-color: white;
+	/* Box Shadow */
+	box-shadow: 0px 5px 10px #00000029;
+}
+
+.create-asset {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 15vw;
+	height: 15vw;
+	border-radius: 20px;
+	border-style: dashed;
+}
+
+.asset-title {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 2vh;
+}

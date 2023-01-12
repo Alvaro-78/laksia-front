@@ -1,0 +1,34 @@
+version: '3.5'
+
+services:
+  local_dev:
+    container_name: laksia_front_local
+    build:
+      context: ./app
+      dockerfile: local.Dockerfile
+    volumes:
+      - ./app:/app
+    ports:
+      - 3000:3000
+    environment:
+      - REACT_APP_LOCAL
+  dev:
+    container_name: laksia_front_dev
+    build:
+      context: ./app
+      dockerfile: development.Dockerfile
+    volumes:
+      - ./app:/app
+    ports:
+      - 80:80
+    environment:
+      - REACT_APP_DEV
+  prod:
+    container_name: laksia_front_prod
+    build:
+      context: ./app
+      dockerfile: production.Dockerfile
+    ports:
+      - 80:80
+    environment:
+      - REACT_APP_PROD

@@ -1,0 +1,70 @@
+{
+	"name": "laksia-front",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@testing-library/jest-dom": "^5.16.2",
+		"@testing-library/react": "^12.1.2",
+		"@testing-library/user-event": "^13.5.0",
+		"axios": "^0.26.0",
+		"bootstrap": "^5.1.1",
+		"bootstrap-icons": "^1.8.1",
+		"env-cmd": "^10.1.0",
+		"json-server": "^0.17.0",
+		"openid": "^2.0.10",
+		"openid-client": "^5.1.4",
+		"prop-types": "^15.8.1",
+		"react": "^17.0.2",
+		"react-bootstrap": "^2.0.0-rc.1",
+		"react-dom": "^17.0.2",
+		"react-easy-crop": "^4.4.0",
+		"react-icons": "^4.3.1",
+		"react-pro-sidebar": "^0.7.1",
+		"react-redux": "^7.2.6",
+		"react-router-dom": "^6.2.1",
+		"react-scripts": "5.0.0",
+		"redux": "^4.1.2",
+		"redux-localstorage-simple": "^2.5.1",
+		"redux-thunk": "^2.4.1",
+		"web-vitals": "^2.1.4"
+	},
+	"scripts": {
+		"local": "env-cmd -e LOCAL npm run start",
+		"dev": "env-cmd -e DEV npm run build",
+		"prod": "env-cmd -e PROD npm run build",
+		"start": "react-scripts start",
+		"fakeDB": "json-server -p 3002 -w db.json",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"lint": "eslint . --fix"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"eslint": "^8.10.0",
+		"eslint-config-airbnb": "^19.0.4",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-import": "^2.25.4",
+		"eslint-plugin-jsx-a11y": "^6.5.1",
+		"eslint-plugin-react": "^7.29.2",
+		"eslint-plugin-react-hooks": "^4.3.0",
+		"prettier": "^2.5.1"
+	}
+}

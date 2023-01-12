@@ -1,0 +1,33 @@
+.background-container {
+	display: flex;
+	background-color: rgb(229, 229, 229);
+	width: 100vw;
+	height: 100vh;
+	font-family: Lexend Deca;
+	font-size: 28px;
+}
+
+.scroll-container {
+	overflow-y: scroll;
+	width: 100vw;
+}
+
+.main-title {
+	margin-top: 3rem;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	padding-left: 4vw;
+}
+
+.bold-title {
+	font-weight: bold;
+	font-size: 36px/45px;
+	letter-spacing: 0px;
+}
+
+.image-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 5rem;
+}

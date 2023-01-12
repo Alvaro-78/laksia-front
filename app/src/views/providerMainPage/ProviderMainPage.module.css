@@ -1,0 +1,30 @@
+.img {
+	width: 40%;
+	height: 20%;
+}
+
+.background-container {
+	display: flex;
+	background-color: rgb(229, 229, 229);
+	width: 100vw;
+	height: 100vh;
+	font-family: Lexend Deca;
+}
+
+.scroll-container {
+	overflow-y: scroll;
+	width: 100vw;
+}
+
+.main-title {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	padding-left: 5.5vw;
+}
+
+/* Bold the title */
+
+.boldFestival {
+	font-weight: bold;
+	margin-top: 3rem;
+}

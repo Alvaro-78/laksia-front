@@ -1,0 +1,29 @@
+/* Wrapper */
+.wraper {
+	display: flex;
+	justify-content: center;
+}
+
+/* Component Desing */
+.elements {
+	display: flex;
+	align-items: baseline;
+}
+
+.create-element {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50px;
+	/* Css native can´t do that, trick with background-img */
+	/* FONT FOR MORE INFORMATION: https://kovart.github.io/dashed-border-generator/ */
+	background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='50' ry='50' stroke='%23333' stroke-width='3' stroke-dasharray='35' stroke-dashoffset='40' stroke-linecap='round'/%3e%3c/svg%3e");
+}
+
+/* Element Title */
+
+.element-title {
+	font-weight: bold;
+	text-align: center;
+	padding-top: 2vh;
+}

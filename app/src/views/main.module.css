@@ -1,0 +1,72 @@
+/* Recicle CSS styles in many view */
+
+/* Scroll Bar Style */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Scroll background */
+::-webkit-scrollbar-track {
+	background: #FFFFFF;
+}
+
+/* Scroll front */
+::-webkit-scrollbar-thumb {
+	background: #9D9D9D;
+	border-radius: 100px;
+}
+
+/* Principal styles */
+.background-container {
+	display: flex;
+	background-color: rgb(229, 229, 229);
+	width: 100vw;
+	height: 100vh;
+	font-family: Lexend Deca;
+	font-size: 28px;
+}
+
+.scroll-container {
+	overflow-y: scroll;
+	width: 100vw;
+}
+
+.main-title {
+	padding-top: 4vh;
+	margin-left: 4rem;
+}
+
+/* Grid */
+.grid-container>* {
+	text-align: center;
+}
+
+/* Main Title Name */
+.main-title-name {
+	grid-area: name;
+}
+
+/* Button */
+.button-container {
+	grid-area: button;
+	display: flex;
+	height: 100%;
+	margin-bottom: 10em;
+}
+
+.button {
+	width: 15%;
+	height: 100%;
+	border: none;
+	border-radius: 85px;
+	background-color: #FFDB5A;
+	box-shadow: 0px 3px 10px #00000017;
+	margin-left: 4rem;
+	font-size: 1em;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}

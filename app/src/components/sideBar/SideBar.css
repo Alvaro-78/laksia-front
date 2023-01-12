@@ -1,0 +1,212 @@
+#header .pro-sidebar {
+	font-family: 'Lexend Deca', sans-serif;
+	font-weight: 300;
+	height: 100vh;
+}
+.sidebar-logo {
+	width: 100%;
+}
+
+.logo-container {
+	width: 100%;
+	height: 8vh;
+}
+
+.logo-container>div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	background-image: url('../../assets/img/Fondo-Icono-Laksia.png');
+}
+
+.logo-container>div>img {
+	width: 80px;
+	height: 80px;
+}
+
+.sidebar-content {
+	width: 10vw;
+	height: 10vh;
+}
+
+.label {
+	padding-left: 1.5vw;
+	font: normal normal 400 1.2rem Lexend Deca;
+	letter-spacing: 0px;
+}
+
+.sidebar-cube {
+	display: flex;
+	width: 100%;
+	height: 12.2vh;
+	/* border-bottom: 2px solid rgb(49, 49, 49); */
+	border-bottom: 1px solid #313131;
+}
+
+.sidebar-cube-copyright {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 12.2vh;
+	/* border-bottom: 2px solid rgb(49, 49, 49); */
+	border-bottom: 1px solid #313131;
+}
+
+.sidebar-cube-top {
+	display: flex;
+	height: 12.2vh;
+	/* border-bottom: 2px solid rgb(49, 49, 49); */
+	/* border-top: 2px solid rgb(49, 49, 49); */
+	border-bottom: 1px solid #313131;
+	border-top: 1px solid #313131;
+}
+
+.pro-inner-item {
+	width: 100%;
+	padding: 8px 35px 8px 30px !important;
+}
+
+.pro-inner-item:focus {
+	background-color: rgb(49, 49, 49);
+}
+
+/* Icons Size */
+.pro-icon-wrapper {
+	margin-right: 0px !important;
+	margin-left: 2rem !important;
+}
+
+/* Modify icon mergin-left when sidebar collapse */
+.pro-sidebar.collapsed .pro-menu > ul > .pro-menu-item>.pro-inner-item>.pro-icon-wrapper {
+	margin-left: 0rem !important;
+}
+
+.pro-icon>svg {
+	width: 40px;
+	height: 40px;
+}
+
+.slider {
+	line-height: 20px;
+	border-radius: 50%;
+	font-weight: bold;
+	font-size: 22px;
+	cursor: pointer;
+	width: 50%;
+}
+
+.sidebar-sections {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 6vh;
+	font: normal normal 300 19px/24px Lexend Deca;
+	color: #BBBBBB;
+	letter-spacing: 1.9px;
+	border-right: 3px solid #313131;
+}
+
+.sidebar-container {
+	display: flex;
+	flex-direction: column;
+}
+
+#header .closemenu {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	font-size: 30px;
+	cursor: pointer;
+	border-bottom: 2px solid rgb(49, 49, 49);
+	/* background-color: rgb(187, 187, 187); */
+}
+
+#header .pro-sidebar {
+	width: 100%;
+	min-width: 100%;
+}
+
+#header .pro-sidebar.collapsed {
+	width: 100px;
+	min-width: 80px;
+}
+
+#header .pro-sidebar-inner {
+	background-color: rgb(67, 67, 67);
+	box-shadow: 0.5px 0.866px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+.pro-menu {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	color: #B8B8B8 !important;
+	border-right: 3px solid #313131;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout {
+	overflow-y: hidden;
+}
+
+.pro-item-content {
+	padding-left: 1.5vw;
+	font-size: 1.2vw;
+}
+
+#header .pro-sidebar-inner .pro-sidebar-layout .active {
+	background-color: rgb(67, 67, 67);
+}
+
+#header .logo {
+	padding: 20px;
+}
+
+.footer-sidebar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 10vh;
+}
+/* Active Section */
+.activated-section {
+	background-color: #313131;
+}
+
+.activated-text {
+	color: #FFFFFF !important;
+}
+
+.activated-icon {
+	fill: #FFFFFF;
+}
+
+@media only screen and (max-width: 720px) {
+	html {
+		overflow: hidden;
+	}
+}
+
+.copyright {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	font-size: large;
+	color: #A2A2A2;
+	letter-spacing: 1.6px;
+	border-right: 3px solid #313131;
+}
+
+.collapse-button-container{
+	position: absolute;
+	top: 50%;
+	right: 23px;
+}
+
+.collapse-button{
+	position: fixed;
+}
